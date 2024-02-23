@@ -1,76 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirBnB Clone</title>
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/7-places.css">
-    <link rel="shortcut icon" href="images/icon.png">
-</head>
-<body>
+<html>
+  <head>
+    <title>AirBnB_clone</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
+    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+    <link rel="stylesheet" type="text/css" href="styles/7-places.css">
+  </head>
+  <body>
     <header>
-        <div id="header_logo"></div>
+        <div class="logo"></div>
     </header>
     <div class="container">
         <section class="filters">
-            <button>Search</button>
+            <button type="button">Search</button>
             <div class="locations">
-                <h3>
-                    States
-                </h3>
-                <h4>
-                    California, Arizona...
-                </h4>
-                <ul class="popover">
-                    <li>
-                        <h2>Arizona:</h2>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>Page</li>
-                            <li>Page2</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2>California:</h2>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>San Francisco</li>
-                            <li>Los Alto</li>
-                        </ul>
-                    </li>
-                </ul>
+                <h3>States</h3>
+                <h4>All States</h4>  
+                <div class="popover">
+                    <ul>
+                        <li>
+                            <h2>Arizona</h2>
+                            <ul>
+                                <li>New york</li>
+                                <li>Los Angeles</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>California</h2>
+                            <ul>
+                                <li>San Francisco</li>
+                                <li>Los Angeles</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>                              
             </div>
             <div class="amenities">
-                <h3>
-                    Amenities
-                </h3>
-                <h4>
-                    Internet, Kitchen...
-                </h4>
-                <ul class="popover">
-                    <li>Internet</li>
-                    <li>TV</li>
-                    <li>Kitchen</li>
-                    <li>Iron</li>
-                </ul>
+                <h3>Amenities</h3>
+                <h4>WiFi, TV, Air Conditioning...</h4>
+                <div class="popover">
+                    <ul>
+                        <li>Internet</li>
+                        <li>TV</li>
+                        <li>Kitchen</li>
+                        <li>Iron</li>
+                    </ul>
+
+                </div>
             </div>
+
         </section>
         <section class="places">
             <h1>Places</h1>
-            <article>
+            <article id="1">
                 <h2>My home</h2>
             </article>
-            <article>
-                <h2>Tiny house</h2>
+            <article id="2">
+                <h2>Tiny House</h2>
             </article>
-            <article>
+            <article id="3">
                 <h2>A suite</h2>
             </article>
         </section>
@@ -78,5 +70,5 @@
     <footer>
         <p>Best School</p>
     </footer>
-</body>
+  </body>
 </html>
